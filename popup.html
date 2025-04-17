@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 10px;
+        width: 220px;
+        background-color: #181818;
+        color: #eee;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+      input[type="range"] {
+        width: 100%;
+      }
+      button {
+        margin-top: 10px;
+        background-color: #3ea6ff;
+        color: #000;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+      button:hover {
+        background-color: #65b8ff;
+      }
+    </style>
+  </head>
+  <body>
+    <label> Min column width: <span id="value">390</span>px </label>
+    <input type="range" min="0" max="1000" value="390" id="slider" />
+    <button id="apply">Apply</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
